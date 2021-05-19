@@ -3,7 +3,7 @@ Starman Jr. is an alert service based on automated messaging via Telegram and/or
 You may need to set a database in MySQL of any preference. This present application is an example using a simple and single table query for everyday activities as following.
 ![alt text](https://github.com/martuscellifaria/starman_jr/blob/master/starman_jr_table.png)
 If you want to associate Starman Jr. to any other type of database (maybe with entity relations) you must modify the query.
-The requests can be triggered as Cron Jobs (see how to set a Cron Job on Linux/MAC, Task Scheduler on Windows, or even how to set these jobs on your cloud environment), or inside any code. There are two examples of how to deal with Starman Jr. if you're a Python or PHP user.
+The requests can be triggered as Cron Jobs (see how to set a Cron Job on Linux/MAC, Task Scheduler on Windows, or even how to set these jobs on your cloud environment), or inside any code.
 And sure, it is a reference to a Mother Trilogy character created by Shigesato Itoi. Don't know what I'm talking about? It is a Nintendo must play series!
 ![alt text](https://github.com/martuscellifaria/starman_jr/blob/master/Starman_Jr.png)
 
