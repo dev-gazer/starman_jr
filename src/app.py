@@ -24,22 +24,10 @@ def verify_password(username, password):
 @app.route('/starman_jr/api/v1.0/', methods=['POST'])
 @auth.login_required
 def send_message():
-	message = request.get_json()['message']
-	urgency = request.get_json()['urgency']
-	app_name = request.get_json()['app_name']
+	activity = request.get_json()['activity']
 	print('Making the request.')
-	return starman_jr.send_message(message, urgency, app_name)
+	return starman_jr.send_message(activity)
 
-@app.route('/starman_jr/api/v1.0/email/', methods=['POST'])
-@auth.login_required
-def send_email():
-	message = request.get_json()['message']
-	app_name = request.get_json()['app_name']
-	subject = request.get_json()['subject']
-	mailto = request.get_json()['mailto']
-	attach_list = request.get_json()['attach_list']
-	print('Sending e-mail')
-	return starman_jr.send_email(message, app_name, subject, mailto, attach_list)
 
 if __name__ == '__main__':
 	app.run(debug=True, host='0.0.0.0', port=5000)
